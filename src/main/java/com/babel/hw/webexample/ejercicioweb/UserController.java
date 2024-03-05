@@ -1,0 +1,7 @@
+package com.babel.hw.webexample.ejercicioweb;
+
+import jakarta.servlet.http.HttpServletRequest;
+
+public interface UserController {
+    String User(String name, int age, String header);
+}
