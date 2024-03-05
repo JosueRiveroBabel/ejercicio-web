@@ -2,7 +2,7 @@ package com.babel.hw.webexample.ejercicioweb;
 
 import com.google.gson.Gson;
 
-public class UserImpl implements User{
+public class UserImpl {
     String name;
     int age;
     String language;
@@ -13,9 +13,28 @@ public class UserImpl implements User{
         this.language = language;
     }
 
-    @Override
-    public String printJSON() {
-        Gson gson = new Gson();
-        return gson.toJson(this);
+    public String getName() {
+        return name;
     }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
+    }
+
 }
